@@ -1,0 +1,64 @@
+## Model Description for Logistic Regression and SVC
+
+### Logistic Regression
+
+**Input:** 
+- Features: 'open-close', 'low-high', 'is_quarter_end'
+- Target: 'target' (binary classification)
+
+**Output:** 
+- Binary classification predictions (0 or 1)
+
+**Model Architecture:** 
+- Logistic Regression is a linear classification model that uses a logistic function to model the probability of a binary outcome. It estimates the coefficients for each feature and combines them linearly to make predictions.
+
+### Performance
+- Training AUC: 0.552189
+- Validation AUC: 0.545759
+- Data: NIO stock data (1980 samples)
+
+**Performance Metrics:**
+- ROC AUC (Area Under the Receiver Operating Characteristic Curve)
+
+**Performance Summary:**
+- The Logistic Regression model achieved an AUC of 0.552189 on the training data and 0.545759 on the validation data, indicating modest predictive power.
+
+### Limitations
+- Logistic Regression assumes that the relationship between features and the log-odds of the target is linear, which may not be the case for complex datasets.
+- It may not capture non-linear relationships in the data effectively.
+
+### Trade-offs
+- Logistic Regression is interpretable and computationally efficient but may underperform when the data has complex, non-linear patterns.
+
+### Support Vector Classifier (SVC)
+
+**Input:** 
+- Features: 'open-close', 'low-high', 'is_quarter_end'
+- Target: 'target' (binary classification)
+
+**Output:** 
+- Binary classification predictions (0 or 1)
+
+**Model Architecture:** 
+- Support Vector Classifier (SVC) is a supervised machine learning algorithm that attempts to find a hyperplane that best separates the data into two classes. It can use different kernel functions to map data into higher dimensions.
+
+### Performance
+- Training AUC: 0.529776
+- Validation AUC: 0.55697
+- Data: NIO stock data (1980 samples)
+
+**Performance Metrics:**
+- ROC AUC (Area Under the Receiver Operating Characteristic Curve)
+
+**Performance Summary:**
+- The SVC model with a linear kernel achieved an AUC of 0.529776 on the training data and 0.55697 on the validation data.
+
+### Limitations
+- SVC's performance can be sensitive to the choice of kernel and hyperparameters.
+- May not perform well on large datasets due to high computational complexity.
+
+### Trade-offs
+- SVC can handle non-linear data when appropriate kernel functions are chosen but may require careful hyperparameter tuning.
+- Linear SVC is computationally efficient and interpretable.
+
+Detailed results are included in the jupyter notebook.
