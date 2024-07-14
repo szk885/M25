@@ -3,7 +3,7 @@
 Machine Learning Model Selection and Hyperparameter Tuning Report for Stock and Cryptocurrency Price Evaluation
 
 
-## NON-TECHNICAL EXPLANATION OF YOUR PROJECT
+## NON-TECHNICAL EXPLANATION OF THE PROJECT
 In this report, the selection of machine learning models has been discussed, hyperparameter tuning strategies, and performance metrics for a stock price prediction task. The code implementation follows the outlined strategies and provides insights into the best-performing models for the given dataset. The choice of models and hyperparameters, as well as the evaluation metric, should be adapted to the specific characteristics of the dataset and the problem at hand. The ultimate goal is to build a model that accurately predicts stock price trends. 
 
 
@@ -11,7 +11,7 @@ In this report, the selection of machine learning models has been discussed, hyp
 YFinance is used for this project.
 
 ## MODEL 
-Since the task involves predicting whether the stock price will increase or decrease (binary classification), classification the following classification models will be considered: Logistic Regression , Support Vector Classifier (SVC),  Random Forest Classifier
+Since the task involves predicting whether the stock price will increase or decrease (binary classification), the following classification models will be considered: Logistic Regression , Support Vector Classifier (SVC),  Random Forest Classifier
 , K-Nearest Neighbors (KNN), Classifier XGBoost Classifier 
 
 
